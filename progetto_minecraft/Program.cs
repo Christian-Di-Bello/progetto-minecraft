@@ -49,7 +49,7 @@
                     MostraInventarioOrdinato();
                     break;
                 case 2:
-
+                    CercaMateriale();
                     break;
                 case 3:
 
@@ -124,9 +124,33 @@
             }
         }
 
+        static void CercaMateriale()
+        {
+            Console.Write("Inserisci il nome del materiale da cercare: ");
+            string nomeMateriale = Console.ReadLine();
+            bool trovato = false;
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (!(materialiInventario[i] == null || materialiInventario[i] == ""))
+                {
+                    if (materialiInventario[i] == nomeMateriale)
+                    {
+                        trovato = true;
+                        Console.WriteLine(materialiInventario[i] + " trovato in posizione " + i + " con quantità: " + quantitaInventario[i]);
+                        break;
+                    }
+                }
+            }
+
+            if (!trovato)
+                Console.WriteLine("Materiale non trovato nell'inventario.");
+        }
+
 
 
 
     }
 }
+
 
