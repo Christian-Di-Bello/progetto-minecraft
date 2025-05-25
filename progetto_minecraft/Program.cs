@@ -9,6 +9,7 @@
 
         static void Main(string[] args)
         {
+            InizializzaInventario();
             int sceltaUtente = -1;
             while (sceltaUtente != 0)
             {
@@ -60,6 +61,33 @@
                     break;
             }
         }
+        static void InizializzaInventario()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                string materialeCasuale;
+                bool giaPresente;
+
+                do
+                {
+                    materialeCasuale = materialiDisponibili[generatoreCasuale.Next(materialiDisponibili.Length)];
+                    giaPresente = false;
+
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (materialiInventario[j] == materialeCasuale)
+                        {
+                            giaPresente = true;
+                            break;
+                        }
+                    }
+                } while (giaPresente);
+
+                materialiInventario[i] = materialeCasuale;
+                quantitaInventario[i] = generatoreCasuale.Next(5, 21);
+            }
+        }
+
 
     }
 }

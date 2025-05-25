@@ -1,0 +1,14 @@
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\bin\Debug\net8.0\progetto_minecraft.exe
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\bin\Debug\net8.0\progetto_minecraft.deps.json
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\bin\Debug\net8.0\progetto_minecraft.runtimeconfig.json
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\bin\Debug\net8.0\progetto_minecraft.dll
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\bin\Debug\net8.0\progetto_minecraft.pdb
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.AssemblyInfoInputs.cache
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.AssemblyInfo.cs
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.dll
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\refint\progetto_minecraft.dll
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.pdb
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.genruntimeconfig.cache
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\ref\progetto_minecraft.dll
