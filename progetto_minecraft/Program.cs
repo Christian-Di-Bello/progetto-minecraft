@@ -52,7 +52,7 @@
                     CercaMateriale();
                     break;
                 case 3:
-
+                    AvviaRicetta();
                     break;
                 case 0:
                     Console.WriteLine("Uscita...");
@@ -147,7 +147,97 @@
                 Console.WriteLine("Materiale non trovato nell'inventario.");
         }
 
+        static void AvviaRicetta()
+        {
+            Console.WriteLine("\n--- Ricette Disponibili ---");
+            Console.WriteLine("1. Acciaio = Ferro + Carbone");
+            Console.WriteLine("2. Picozza = Legno + Pietra");
+            Console.Write("Scegli una ricetta (1 o 2): ");
 
+            string input = Console.ReadLine();
+            int sceltaRicetta;
+            if (!int.TryParse(input, out sceltaRicetta) || (sceltaRicetta != 1 && sceltaRicetta != 2))
+            {
+                Console.WriteLine("Scelta non valida.");
+                return;
+            }
+
+            string materiale1, materiale2, creato;
+
+            if (sceltaRicetta == 1)
+            {
+                materiale1 = "Ferro";
+                materiale2 = "Carbone";
+                creato = "Acciaio";
+            }
+            else
+            {
+                materiale1 = "Legno";
+                materiale2 = "Pietra";
+                creato = "Picozza";
+            }
+
+            int indice1 = -1;
+            int indice2 = -1;
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (materialiInventario[i] == materiale1)
+                    indice1 = i;
+                if (materialiInventario[i] == materiale2)
+                    indice2 = i;
+            }
+
+            if (indice1 == -1 || indice2 == -1)
+            {
+                Console.WriteLine("Uno o entrambi i materiali richiesti non sono presenti.");
+                return;
+            }
+
+            if (quantitaInventario[indice1] > 0 && quantitaInventario[indice2] > 0)
+            {
+                quantitaInventario[indice1]--;
+                quantitaInventario[indice2]--;
+
+                bool aggiunto = false;
+                for (int i = 0; i < 4; i++)
+                {
+                    if (materialiInventario[i] == creato)
+                    {
+                        quantitaInventario[i]++;
+                        aggiunto = true;
+                        break;
+                    }
+                }
+
+                if (!aggiunto)
+                {
+                    for (int i = 0; i < 4; i++)
+                    {
+                        if (quantitaInventario[i] == 0 || materialiInventario[i] == null || materialiInventario[i] == "")
+                        {
+                            materialiInventario[i] = creato;
+                            quantitaInventario[i] = 1;
+                            aggiunto = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (!aggiunto)
+                {
+                    Console.WriteLine("Inventario pieno.");
+                }
+                else
+                {
+                    Console.WriteLine("Hai creato: " + creato);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Materiali insufficienti.");
+            }
+        }
 
 
     }
