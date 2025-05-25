@@ -1,4 +1,6 @@
-﻿namespace progetto_minecraft
+﻿using System.ComponentModel.Design;
+
+namespace progetto_minecraft
 {
     internal class Program
     {
@@ -152,11 +154,12 @@
             Console.WriteLine("\n--- Ricette Disponibili ---");
             Console.WriteLine("1. Acciaio = Ferro + Carbone");
             Console.WriteLine("2. Picozza = Legno + Pietra");
-            Console.Write("Scegli una ricetta (1 o 2): ");
+            Console.WriteLine("3. Anello = Oro + Diamante");
+            Console.Write("Scegli una ricetta (1 o 2 o 3): ");
 
             string input = Console.ReadLine();
             int sceltaRicetta;
-            if (!int.TryParse(input, out sceltaRicetta) || (sceltaRicetta != 1 && sceltaRicetta != 2))
+            if (!int.TryParse(input, out sceltaRicetta) || (sceltaRicetta != 1 && sceltaRicetta != 2 && sceltaRicetta > 3))
             {
                 Console.WriteLine("Scelta non valida.");
                 return;
@@ -170,11 +173,17 @@
                 materiale2 = "Carbone";
                 creato = "Acciaio";
             }
-            else
+            else if (sceltaRicetta == 2)
             {
                 materiale1 = "Legno";
                 materiale2 = "Pietra";
                 creato = "Picozza";
+            }
+            else
+            {
+                materiale1 = "Oro";
+                materiale2 = "Diamante";
+                creato = "Anello Magico";
             }
 
             int indice1 = -1;
@@ -199,6 +208,12 @@
                 quantitaInventario[indice1]--;
                 quantitaInventario[indice2]--;
 
+                if (quantitaInventario[indice1] == 0)
+                    materialiInventario[indice1] = "";
+                if (quantitaInventario[indice2] == 0)
+                    materialiInventario[indice2] = "";
+
+
                 bool aggiunto = false;
                 for (int i = 0; i < 4; i++)
                 {
@@ -214,7 +229,7 @@
                 {
                     for (int i = 0; i < 4; i++)
                     {
-                        if (quantitaInventario[i] == 0 || materialiInventario[i] == null || materialiInventario[i] == "")
+                        if ((materialiInventario[i] == null || materialiInventario[i] == "") || quantitaInventario[i] == 0)
                         {
                             materialiInventario[i] = creato;
                             quantitaInventario[i] = 1;
@@ -239,8 +254,9 @@
             }
         }
 
-
     }
 }
+
+
 
 
