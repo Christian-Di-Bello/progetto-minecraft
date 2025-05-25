@@ -46,13 +46,13 @@
             switch (scelta)
             {
                 case 1:
-                    
+                    MostraInventarioOrdinato();
                     break;
                 case 2:
-                    
+
                     break;
                 case 3:
-                   
+
                     break;
                 case 0:
                     Console.WriteLine("Uscita...");
@@ -88,6 +88,45 @@
             }
         }
 
+        static void MostraInventarioOrdinato()
+        {
+            string[] materialiOrdinati = new string[4];
+            int[] quantitaOrdinata = new int[4];
+
+            for (int i = 0; i < 4; i++)
+            {
+                materialiOrdinati[i] = materialiInventario[i];
+                quantitaOrdinata[i] = quantitaInventario[i];
+            }
+
+            for (int i = 0; i < materialiOrdinati.Length - 1; i++)
+            {
+                for (int j = i + 1; j < materialiOrdinati.Length; j++)
+                {
+                    if (quantitaOrdinata[j] > quantitaOrdinata[i])
+                    {
+                        int tempQ = quantitaOrdinata[i];
+                        quantitaOrdinata[i] = quantitaOrdinata[j];
+                        quantitaOrdinata[j] = tempQ;
+
+                        string tempM = materialiOrdinati[i];
+                        materialiOrdinati[i] = materialiOrdinati[j];
+                        materialiOrdinati[j] = tempM;
+                    }
+                }
+            }
+
+            Console.WriteLine("\n--- Inventario Ordinato ---");
+            for (int i = 0; i < 4; i++)
+            {
+                if (!(materialiOrdinati[i] == null || materialiOrdinati[i] == ""))
+                    Console.WriteLine(materialiOrdinati[i] + " --> " + quantitaOrdinata[i]);
+            }
+        }
+
+
+
 
     }
 }
+
