@@ -183,7 +183,7 @@ namespace progetto_minecraft
             {
                 materiale1 = "Oro";
                 materiale2 = "Diamante";
-                creato = "Anello Magico";
+                creato = "Anello";
             }
 
             int indice1 = -1;
@@ -208,12 +208,6 @@ namespace progetto_minecraft
                 quantitaInventario[indice1]--;
                 quantitaInventario[indice2]--;
 
-                if (quantitaInventario[indice1] == 0)
-                    materialiInventario[indice1] = "";
-                if (quantitaInventario[indice2] == 0)
-                    materialiInventario[indice2] = "";
-
-
                 bool aggiunto = false;
                 for (int i = 0; i < 4; i++)
                 {
@@ -229,7 +223,7 @@ namespace progetto_minecraft
                 {
                     for (int i = 0; i < 4; i++)
                     {
-                        if ((materialiInventario[i] == null || materialiInventario[i] == "") || quantitaInventario[i] == 0)
+                        if (quantitaInventario[i] == 0 || materialiInventario[i] == null || materialiInventario[i] == "")
                         {
                             materialiInventario[i] = creato;
                             quantitaInventario[i] = 1;
@@ -241,11 +235,11 @@ namespace progetto_minecraft
 
                 if (!aggiunto)
                 {
-                    Console.WriteLine("Inventario pieno.");
+                    Console.WriteLine("Hai creato: " + creato);
                 }
                 else
                 {
-                    Console.WriteLine("Hai creato: " + creato);
+                    Console.WriteLine("Inventario pieno.");
                 }
             }
             else

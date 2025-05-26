@@ -12,3 +12,4 @@ C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecra
 C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.pdb
 C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.genruntimeconfig.cache
 C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\ref\progetto_minecraft.dll
+C:\Users\chris\Desktop\Informatica\C#\GitHub\progetto-minecraft\progetto_minecraft\obj\Debug\net8.0\progetto_minecraft.sourcelink.json
