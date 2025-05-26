@@ -8,24 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\alunno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\Desktop\\Informatica\\C#\\GitHub\\progetto-minecraft\\progetto_minecraft\\progetto_minecraft.csproj",
+      "projectUniqueName": "C:\\Users\\alunno\\Documents\\GitHub\\progetto-minecraft\\progetto_minecraft\\progetto_minecraft.csproj",
       "projectName": "progetto_minecraft",
-      "projectPath": "C:\\Users\\chris\\Desktop\\Informatica\\C#\\GitHub\\progetto-minecraft\\progetto_minecraft\\progetto_minecraft.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\Desktop\\Informatica\\C#\\GitHub\\progetto-minecraft\\progetto_minecraft\\obj\\",
+      "projectPath": "C:\\Users\\alunno\\Documents\\GitHub\\progetto-minecraft\\progetto_minecraft\\progetto_minecraft.csproj",
+      "packagesPath": "C:\\Users\\alunno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alunno\\Documents\\GitHub\\progetto-minecraft\\progetto_minecraft\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\alunno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -50,8 +45,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -72,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

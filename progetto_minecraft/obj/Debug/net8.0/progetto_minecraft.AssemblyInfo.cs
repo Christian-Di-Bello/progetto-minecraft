@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("progetto_minecraft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b90a5af8a7734d4b21c4eff19d15eb3f6e86f79f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33302570bb2a2dc2c987b9e312c67152c89413f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("progetto_minecraft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("progetto_minecraft")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
